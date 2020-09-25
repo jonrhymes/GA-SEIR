@@ -1,0 +1,357 @@
+/**/
+/**/
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem); 
+    }
+    80% {
+        opacity: 0.5;
+        transform: translateX(1rem); 
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0); 
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem); 
+    }
+    80% {
+        transform: translateX(-1rem); 
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0); 
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem); 
+    }
+    70% {
+        opacity: 0.5;
+        transform: translateY(-.1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0); 
+    }
+}
+/* Asterisks are the universal selector. These are separated by commas*/
+
+*,
+*::after,
+*::before {
+    /* background-color: red;
+    border: 10px solid black; */
+
+    /* Below is the reset, so we build up from different browsers' settings. Every element will inherit */
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* sets the size so that it has the same ratio, insted of hardcoding
+    font-size: 62.5%;
+    */
+    font-size: 10px;
+   }
+
+body {
+   box-sizing: border-box;
+    }
+    /* ^^^ PAGE RESET: Resets the browser settings */
+
+
+    /* This is actual styling BELOW */
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #777;
+    padding: 3rem; /* Uses same units at a percentage, REM refers to the root. EM is based on the parent element. USE REM */
+    }
+
+
+.header {
+    height: 95vh; 
+    /* This is what can show up on the screen at one time */
+    background-image: linear-gradient(to right bottom, rgba(255, 221, 255, 0.8) , rgba(153, 50, 204, 0.8));
+    /* Use background-image, not background-color to set the gradient*/
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    /* If you want something to be fixed, then you have to put ^^^ position: relative*/
+    
+    /* -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 50% 100%, 0% 50%); */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+
+    }
+    
+.header__logo-box {
+    /* ^ double underscore means that logo-box BELONGS to Header Element */
+
+
+    /* When you want to make sure an element is fixed, you have to use relative on the parent element */
+    position: absolute;
+    top: 4rem;
+    left: 4em;
+
+    }
+    
+/* .header__logo {
+   
+    } */
+.header__text-box {
+
+    /* Centers the text box so you don't have to use Flex-Box for everything */
+    
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+}
+.heading-primary--main {
+    /* Double dashes means that it's a modifier */
+    display: block;
+    font-size: 6rem;
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem; 
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+ }
+.heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+/* .heading-secondary {
+
+    }
+.heading-secondary:hover {
+
+    }
+
+.heading-tertiary {
+
+    } */
+
+/**/
+
+.btn, .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+
+    }
+
+.btn:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+  }
+  /* Psuedo class vs Psuedo element */
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+ 
+    }
+
+.btn:active, .btn:focus {
+    outline: none;
+    transform: translateY(-.1rem);
+    box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.2); 
+
+    }
+
+.btn--white {
+    background-color: #fff;
+    color: #777;
+
+}
+.btn--white::after {
+    background-color: #fff;
+    }
+
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    }
+
+.btn--animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+    }
+
+
+/**/
+
+
+.navigation__checkbox {
+/* For the popup and the checkbox */
+    display: none;
+   }
+
+.navigation__button {
+/**/
+    background-color: #fff;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.navigation__background {
+/**/height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6.5rem;
+    right: 6.5rem;
+    background-image: radial-gradient(#fdf, #9932CC);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.navigation__nav {
+/**/
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navigation__list {
+/**/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.navigation__item {
+/**/ margin: 1rem;
+   }
+
+.navigation__link:link, .navigation__link:visited {
+/**/display: inline-block;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 220%;
+    transition: all .4s;
+
+}
+.navigation__link:link span, .navigation__link:visited span {
+/**/
+    margin-right: 1.5rem;
+    display: inline-block;
+}
+
+.navigation__link:hover, .navigation__link:active {
+/**/
+    background-position: 100%;
+    color: #9400D3;
+    transform: translateX(1rem);
+}
+
+/* Tilde means general sibling selector */
+.navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(   80);
+   }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+    opacity: 1;
+    width: 100%;
+  }
+
+.navigation__icon {
+ = }
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+
+    }
+.navigation__icon::before, .navigation__icon::after {
+
+}
+.navigation__icon::before {
+    }
+.navigation__icon::after {
+    }
+
+.navigation__button:hover .navigation__icon::before {
+    }
+
+.navigation__button:hover .navigation__icon::after {
+    }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+   }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    }
+/**/
+.content-card{
+
+}
+

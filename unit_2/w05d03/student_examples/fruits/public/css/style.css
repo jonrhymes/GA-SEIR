@@ -1,0 +1,13 @@
+h1 {
+    color: orange;
+}
+
+img {
+    max-width: 300px;
+}
+
+.myClass {
+    color: red;
+}
+
+/* more specific style wins */

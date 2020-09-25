@@ -1,0 +1,76 @@
+<<<<<<< HEAD
+body {background-color: #F8F7FF}/*or any color of your choosing*/
+
+* {
+    text-align: center;
+}
+
+.doggo {
+    font-family: fantasy;
+}
+
+.secret {
+    opacity: 0.5;
+}
+
+li {
+    list-style-type: none;
+}
+
+table, th, td {
+    border: gray 1px solid;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+.cabbage {
+    color: chartreuse;
+}
+
+h2 {
+    color: blueviolet;
+}
+
+h5 {
+    font-size: 20px;
+}
+=======
+body {
+    background-color: #F8F7FF;
+    text-align: center;
+}
+h1 {
+    background-image: url("https://images.ctfassets.net/usf1vwtuqyxm/3QQaEkThAnIAiXveGhJYD9/f79a571dbe9fd456d65e783040601fdc/hogwarts-castle-.jpg?fm=jpg");
+    font-family: 'Henny Penny', cursive;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    padding: 20%;
+    color: #E7E1E8;
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
+}
+.owl {
+    font-family: fantasy;
+}
+.secret {
+    opacity: 0.5;
+}
+li {
+    list-style-type: none;
+}
+table, th, td {
+    border: 1px solid gray;
+}
+table {
+    margin: 0 auto;
+}
+.cabbage {
+    color: chartreuse;
+}
+>>>>>>> b2c4f80e74a9e4e260e47473d2057c5d453acf3b

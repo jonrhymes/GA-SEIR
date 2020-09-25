@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import "reset";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999;
+  font-size: 16px;
+  .main-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__form{
+      display: flex;
+      flex-direction: column;
+    }
+    &__display{
+      display: flex;
+      flex-direction: column;
+    }
+    &__title{
+      color: red;
+      text-decoration: underline;
+      margin-bottom: 2rem;
+    }
+    &__products{
+      display: flex;
+      flex-direction: column;
+      &--item{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        span  {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

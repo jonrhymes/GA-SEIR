@@ -1,0 +1,25 @@
+body {
+    background-color: #EAEDF3;
+}
+h1 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    margin: auto;
+}
+img {
+    position: relative;
+    max-width: 100%;
+    border: 1px black solid;
+}
+h3 {
+    color: rgba(74, 171, 177, 1);
+    font-size: 35px;
+    margin: auto;
+}
+.topbar {
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}

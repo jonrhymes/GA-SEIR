@@ -1,0 +1,15 @@
+:root {
+    --main: red;
+    --secondary: purple;
+}
+<<<<<<< HEAD
+/* variable used to globally change type, color, anything */
+
+/* h1 {color: red;} */
+h1 {color: var(--secondary);}
+=======
+
+h1 {
+    color: var(--secondary);
+}
+>>>>>>> b2c4f80e74a9e4e260e47473d2057c5d453acf3b

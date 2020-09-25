@@ -1,0 +1,11 @@
+SOLID is an acronym that stands for five principles of Software Development:
+
+1. Single Responsibility Principle
+2. Open / Closed Principle
+3. Liskov Substitution Principle
+4. Interface Segregation Principle
+5. Dependency Inversion Principle	
+
+First, classes or modules should have a singular role and be integral to one part of the software. Second, classes, functions or modules have a central core that can't be altered but that can add on new elements or behaviors. Third, a subtype or subclass would have the same qualities as the parent-type so that it could be easily replaced. Fourth, many smaller objects are better than one all-purpose object. Fifth, abstractions are preferred over specific details and are dependent on each other, inverting the common conception.
+
+

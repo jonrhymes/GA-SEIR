@@ -1,0 +1,27 @@
+body {
+    background-color: thistle;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.red {
+    background-color: red;
+    height: 25px;
+    width: 25px;
+}
+
+.black {
+    background-color: black;
+    height: 25px;
+    width: 25px;
+}
+
+.row {
+    display: flex;
+    margin: 2px;
+    width: 200px;
+}
+
+/* .fixed {
+    width: 200px;
+} */

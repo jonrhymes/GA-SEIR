@@ -1,0 +1,255 @@
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+}
+
+/* GENERAL */
+
+body {
+    background-color: whitesmoke;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+
+    /* width: 100%;
+    height: 100%;
+    padding: .5vw 2vw; */
+}
+
+.main-content {
+    width: 80%;
+    /* position: absolute; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #92b2ba;
+    margin: 1.5vw 0;
+}
+
+.nav > a {
+    font-family: 'DM Sans', sans-serif;
+    padding: 1vw;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner > img {
+    width: 100%;
+}
+
+.banner > h1 {
+    position: absolute;
+    top: 25%;
+    left: 66%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 60px;
+    font-weight: bolder;
+    white-space: .5vw;
+    padding: 1vw;
+    color: #92b2ba;
+    text-shadow: 2px 2px whitesmoke;
+}
+
+.banner > h2 {
+    position: absolute;
+    top: 53%;
+    left: 69%;
+    color: #f0a8bb;
+    background-color: whitesmoke;
+    padding: .5vw;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2vw 0;
+}
+
+/* .categories > img {
+    width: 31%;
+    /* margin-bottom: 1vw;
+    display: block; 
+} */
+
+/* .categories {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+
+.card {
+    /* display: block; */
+    width: 31%;
+    background-color: white;
+    /* color: #92b2ba; */
+    box-shadow: 2px 2px 2px #bcbcbc;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 .7vw;
+
+}
+
+.content > h4 {
+    background-color: #f0a8bb;
+    color: whitesmoke;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 5px;
+}
+
+.card-text {
+    color: #92b2ba;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    /* padding-bottom: 30px; */
+
+}
+
+.links {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 .7vw;
+}
+
+.links > a {
+    background-color: #eeeeee;
+    color: #777777;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 5px;
+    font-size: 10px;
+    margin: 10px 5px 10px 0;
+}
+
+.card > img {
+    width: 100%;
+}
+
+.row2 {
+    margin: 2vw 0 0 0 ;
+}
+
+.row3 {
+    margin: 2vw 0 0 0 ;
+}
+
+/* .cards {
+    /* width: 31%; */
+    /* margin-bottom: 1vw; */
+/* } */
+
+
+/* .cat-name {
+    background-color: whitesmoke;
+    width: 31%;
+} */
+
+.site-info {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #eeeeee;
+    align-items: center;
+    /* margin: 1vw 2vw; */
+}
+
+
+.logo {
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 2vw 0; */
+    width: 30%;
+    border-right: solid rgba(211,211,211, 0.8) 1px;
+}
+
+.logo > img {
+    width: 20%;
+}
+
+.logo > h4 {
+    color: #f0a8bb;
+}
+
+.icons {
+    display: block;
+    color: #92b2ba;
+}
+
+.customer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin: 2vw 0;
+    padding-right: 5vw;
+    border-right: solid rgba(211,211,211, 0.8) 1px;
+}
+
+.customer > h4 {
+    font-family: 'DM Sans', sans-serif;
+    color: #92b2ba;
+}
+
+.customer > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #777777;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 3px;
+    font-size: 10px;
+}
+
+.flowerbox {
+    display: flex;
+    flex-direction: column;
+    margin: 2vw 0;
+    margin-right: 5vw;
+}
+
+.flowerbox > h4 {
+    font-family: 'DM Sans', sans-serif;
+    color: #92b2ba;
+}
+
+.flowerbox > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #777777;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 3px;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+/* 
+    font-family: 'Open Sans Condensed', sans-serif;
+Darker Pink: #f0a8bb
+Lighter Pink: #f9dde0
+Blue: #92b2ba
+Background: whitesmoke
+Tag Background, Footer Background: #eeeeee
+Tag Text: #777777
+*/

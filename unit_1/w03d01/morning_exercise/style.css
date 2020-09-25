@@ -1,0 +1,76 @@
+/* =======
+GENERAL - go down the list of the parent classes and style them first
+======= */
+
+body {
+    font-family: arial;
+}
+
+.large-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* === MAIN CONTENT */
+
+.main-content {
+    width: 80%;
+}
+
+.banner > img { /* '>' means affect ONLY the DIRECT CHILD */
+    width: 100%;
+    /* 100% of it's parent, which is main content, which is 80%; */
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    /* to give space in between, you've got to use margin */
+    margin: 20px 0; /* top/bottom + left/right */
+}
+
+.categories > img {
+    width: 31%; /* since there are 3 images, divide 100% by three and floor it because you want some space between */
+}
+
+.site-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-info > img {
+    width: 48%;
+}
+
+/* === SIDE BAR */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar > img {
+    width: 25%;
+    opacity: 0.5;
+}
+
+.cat-nav {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.site-nav {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+
+.cat-nav a, .site-nav a { /* selects multiple links at once */
+    text-decoration: none;
+    margin: 5px 0;
+    color: #ccc;
+}

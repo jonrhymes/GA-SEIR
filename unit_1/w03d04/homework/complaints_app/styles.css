@@ -1,0 +1,43 @@
+body {
+    background-color: saddlebrown;
+}
+
+input {
+
+}
+
+.topbar {
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+section {
+    border: 2px gainsboro solid;
+    height: 300px;
+    width: 50%;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+aside {
+    border: 2px goldenrod solid;
+    width: 50%;
+    height: 300px;
+    padding: 10px;
+}
+
+.brooklyn:hover, .manhattan:hover, .queens:hover, .bronx:hover, .staten-island:hover {
+    background-color: royalblue;
+}
+
+.hidden {
+    display: flex;
+    flex-direction: column;
+}
+
+.reveal {
+    display: inline-block;
+}

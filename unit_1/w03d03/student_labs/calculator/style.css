@@ -1,0 +1,80 @@
+div {
+    /* border: 1px solid black; */
+}
+
+.container {
+    margin: 0 20%;
+    border-radius: 10%;
+}
+
+.topbar {
+    color: white;
+    background-color: black;
+    font-size: 80px;
+    display: flex;
+    justify-content: flex-end;
+    height: 150px;
+    align-items: flex-end;
+    margin-right: 204px;
+    width: 100%;
+    letter-spacing: 30px;
+    
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.tier {
+    background-color: #ccc;
+    border: 1px solid gray;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#right-column {
+    background-color: orange;
+    color: white;
+    font-size: 40px;
+}
+
+.twotier {
+    background-color: #ccc;
+    border: 1px solid gray;
+    padding: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.twobars {
+    background-color: #ccc;
+    border: 1px solid gray;
+    padding: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.zero {
+    background-color: #ccc;
+    border: 1px solid gray;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
+    font-size: 40px;
+    padding-left: 31.6%;
+}
+
+
+/* .row2 {
+    display: flex;
+} */
